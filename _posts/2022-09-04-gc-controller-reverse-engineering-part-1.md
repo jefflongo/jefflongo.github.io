@@ -14,6 +14,7 @@ image:
   height: 400
   alt: GameCube controller protocol
 ---
+
 ## Motivation
 
 I'm not the first one to reverse engineer the GameCube controller protocol. However, a lot of the information out there is either incomplete or inacccurate. With the intent to emulate the GameCube controller protocol on a microcontroller, I took a deep dive into understanding the protocol.
@@ -209,7 +210,7 @@ Because the GameCube had no kernel, controller polling is done completely in har
 
 ## Origin Command (0x41)
 
-![Origin Command](/assets/img/gc_controller_reverse_engineering/origin.jpg)
+![Origin command](/assets/img/gc_controller_reverse_engineering/origin.jpg)
 _Origin command_
 
 The origin command tells the console what the state of the controller was when it came out of reset. It is used to calibrate the analog controls if they are naturally uncentered. The origin value gets subtracted off of any given analog input before a game processes it. For example, if the joystick x-axis origin was at x = 5 (assume center is 0), and the current value is 5, the value a game would use would be the current value minus the origin value, resulting in a value of 0. In other words, it "shifts" the joystick's center to the origin value. This command (or a [recalibrate](#recalibrate-command-0x42) command) immediately follows the response of an ID command. The controller responds with 10 bytes. The first 2 bytes are the same as the [first 2 bytes](#status-response-bytes-1-and-2) in the response to a status command. When the console requests a controller's origin, the _Origin has been sent to console_ bit in the ID, origin, and status commands are cleared.
@@ -230,6 +231,9 @@ The remaining 8 bytes describe the analog inputs. These bytes are described in t
 |  10   | B Analog    |
 
 ## Recalibrate Command (0x42)
+
+![Recalibrate command](/assets/img/gc_controller_reverse_engineering/recalibrate.jpg)
+_Recalibrate command_
 
 This command is functionally very similar to the [origin](#origin-command-0x41) command. It tells the controller to capture new origin values and report them to the console. The response format is the same as an origin command. However, it does have 2 command arguments like the status command. It's unclear whether these arguments are used. They are both always 0x00. This command is sometimes used instead of the origin command. For example, when booting up the GameCube or Wii system menu.
 
