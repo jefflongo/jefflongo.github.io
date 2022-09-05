@@ -34,8 +34,8 @@ The original reverse engineers of the adapter made a [thread on GBATemp](https:/
 | 0x13<br/>Start Polling | `[0x13]`                     | None*                                                                                       |
 | 0x14<br/>Stop Polling  | `[0x14]`                     | `[0x24, 0x01 if previously polling else 0x00]`                                              |
 |  0x15<br/>Hard Reset   | `[0x15]`                     | None. Will not respond further until reinitialized.                                         |
-|    0x16<br/>Unknown    | [`0x16, ...]`                | ?                                                                                           |
-|    0x17<br/>Unknown    | [`0x17, ...]`                | ?                                                                                           |
+|    0x16<br/>Unknown    | `[0x16, ...]`                | ?                                                                                           |
+|    0x17<br/>Unknown    | `[0x17, ...]`                | ?                                                                                           |
 
 \*After polling is started, reading from the *read* endpoint will deliver data in the format  
 `[0x21,`  
