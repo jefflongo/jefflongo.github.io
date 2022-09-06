@@ -34,6 +34,9 @@ The next step after identifying the interface is to capture it in action. One wa
 
 To take this capture, I opted to use a [Saleae Logic Pro 8](https://usd.saleae.com/products/saleae-logic-pro-8). It is compatible with their [Logic 2](https://www.saleae.com/downloads/) software which is an absolutely fantastic piece of software. It is much more intuitive and user-friendly to use than alternatives such as PulseView. The huge advantage to using the Logic software is that it allows you to build a protocol decoder. A protocol decoder can run on a waveform and display it in a user-readable format, instead of inspecting it one bit at a time. The Saleae Logic hardware is no doubt quite expensive. There are, however, cheap knock-offs that also work with the Logic software. They can get the job done, but in my experience only work at pretty slow sample rates, are prone to randomly disconnecting, and do not have the ability to capture analog data as well. The official hardware is well worth the investment.
 
+![Saleae Logic Pro 8 connected to GameCube controller](/assets/img/gc_controller_reverse_engineering/saleae.jpg)
+_Saleae Logic Pro 8 connected to GameCube controller_
+
 Equipped with the Saleae Logic, I took some captures of controller's data line. The protocol is a command/response interface; the console sends a command, and the controller sends a response. Bits are encoded based on the low time of the signal. The console sends bits with a period of 5us, while the controller sends bits with a period of 4us. A 0 is encoded by driving the line low for 75% of the period, and releasing it for the remaining 25%. A 1 is encoded by driving the line low for 25% of the period, and releasing it for the remaining 75%. When the command or response is completed, a 1 bit is sent as a stop bit. The timings are summarized below.
 
 | Bit            | Low time (us) | High Time (us) | Total Period (us) |
