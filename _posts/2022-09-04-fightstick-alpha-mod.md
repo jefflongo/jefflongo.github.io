@@ -1,13 +1,8 @@
 ---
-layout: post
 title: Adding a Removable Cable to the FightStick Alpha
 date: 2022-09-04 09:57 -0700
-categories:
-- Projects
-- Mods
-tags:
-- hardware
-- 3d-printing
+categories: [Projects, Mods]
+tags: [hardware, 3d-printing]
 image:
   path: /assets/img/fightstick-alpha-mod/fightstick-alpha-mod.jpg
   width: 1000

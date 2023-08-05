@@ -1,12 +1,7 @@
 ---
-layout: post
 title: GameCube Adapter Reverse Engineering
-categories:
-- Projects
-- GameCube Controller
-tags:
-- wii
-- gamecube
+categories: [Projects, GameCube Controller]
+tags: [wii, gamecube]
 image:
   path: /assets/img/gc_adapter_reverse_engineering/gc_adapter_reverse_engineering.jpg
   width: 1000

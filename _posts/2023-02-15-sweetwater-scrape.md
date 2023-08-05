@@ -1,13 +1,7 @@
 ---
-layout: post
 title: Finding the Perfect Guitar on Sweetwater
-categories:
-- Projects
-- Software
-tags:
-- guitar
-- python
-- web-scraping
+categories: [Projects, Software]
+tags: [guitar, python, web-scraping]
 image:
   path: /assets/img/sweetwater_scrape/stock.png
   width: 1000

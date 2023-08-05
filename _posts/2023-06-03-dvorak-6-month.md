@@ -1,11 +1,8 @@
 ---
-layout: post
 title: Dvorak 6 Month Reflection
 date: 2023-06-03 16:20 -0700
-categories:
-- Personal
-tags:
-- keyboards
+categories: [Personal]
+tags: [keyboards]
 image:
   path: /assets/img/dvorak/dvorak.png
   width: 1000

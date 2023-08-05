@@ -1,13 +1,8 @@
 ---
-layout: post
 title: GameCube Controller Reverse Engineering (Part 1)
 date: 2022-09-04 00:10 -0700
-categories:
-- Projects
-- GameCube Controller
-tags:
-- wii
-- gamecube
+categories: [Projects, GameCube Controller]
+tags: [wii, gamecube]
 image:
   path: /assets/img/gc_controller_reverse_engineering/gc_controller_reverse_engineering.png
   width: 1000
