@@ -9,7 +9,7 @@ tags:
 - wii
 - gamecube
 image:
-  src: "/assets/img/gc_controller_reverse_engineering/gc_controller_reverse_engineering.png"
+  path: /assets/img/gc_controller_reverse_engineering/gc_controller_reverse_engineering.png
   width: 1000
   height: 400
   alt: GameCube controller protocol

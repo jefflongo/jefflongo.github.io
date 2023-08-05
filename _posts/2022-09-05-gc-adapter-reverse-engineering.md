@@ -8,7 +8,7 @@ tags:
 - wii
 - gamecube
 image:
-  src: "/assets/img/gc_adapter_reverse_engineering/gc_adapter_reverse_engineering.jpg"
+  path: /assets/img/gc_adapter_reverse_engineering/gc_adapter_reverse_engineering.jpg
   width: 1000
   height: 400
   alt: GameCube adapter

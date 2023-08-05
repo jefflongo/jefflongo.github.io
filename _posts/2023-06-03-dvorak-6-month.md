@@ -7,7 +7,7 @@ categories:
 tags:
 - keyboards
 image:
-  src: "/assets/img/dvorak/dvorak.png"
+  path: /assets/img/dvorak/dvorak.png
   width: 1000
   height: 400
   alt: Dvorak Keyboard Layout

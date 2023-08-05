@@ -9,7 +9,7 @@ tags:
 - python
 - web-scraping
 image:
-  src: "/assets/img/sweetwater_scrape/stock.png"
+  path: /assets/img/sweetwater_scrape/stock.png
   width: 1000
   height: 400
   alt: Sweetwater sample image

@@ -9,7 +9,7 @@ tags:
 - hardware
 - 3d-printing
 image:
-  src: "/assets/img/fightstick-alpha-mod/fightstick-alpha-mod.jpg"
+  path: /assets/img/fightstick-alpha-mod/fightstick-alpha-mod.jpg
   width: 1000
   height: 400
   alt: Removable cable
