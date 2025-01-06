@@ -11,5 +11,5 @@ cp $1 ${DEPLOY_DIR}/dist.zip
 crc32 $1 > ${DEPLOY_DIR}/hash.txt
 
 git add ${DEPLOY_DIR}
-git commit -m "deploying longbow beta"
+git commit -m "chore: deploying longbow alpha"
 git push origin jeff

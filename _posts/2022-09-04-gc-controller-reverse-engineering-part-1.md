@@ -52,7 +52,7 @@ A reset command notifies the controller to reset, then responds as if it receive
 ![ID Command](/assets/img/gc_controller_reverse_engineering/id.jpg)
 _ID command_
 
-In this image, the ID command issued by the console is displayed in red. Note the 8 low bits followed by a high stop bit. The controller responds with a 3 byte bitmap, which tells the console some information about itself, followed by a stop bit. The first 2 bytes describe the type of controller, described in the table below ([source](http://hitmen.c02.at/files/yagcd/yagcd/chap9.html)). This table is incomplete. Please reach out if any more accurate information can be provided.
+In this image, the ID command issued by the console is displayed in red. Note the 8 low bits followed by a high stop bit. The controller responds with a 3 byte bitmap, which tells the console some information about itself, followed by a stop bit. The first 2 bytes describe the type of controller, described in the table below ([source](https://hitmen.c02.at/files/yagcd/yagcd/chap9.html)). This table is incomplete. Please reach out if any more accurate information can be provided.
 
 ### ID Response Bytes 1 and 2
 
